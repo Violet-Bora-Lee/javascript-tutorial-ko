@@ -2,9 +2,9 @@ importance: 5
 
 ---
 
-# Does a function pickup latest changes?
+# 출력되는 name 맞추기
 
-The function sayHi uses an external variable name. When the function runs, which value is it going to use?
+함수 sayHi는 외부 변수인 name을 사용하고 있습니다. 함수가 되면 어떤 name을 사용될까요?
 
 ```js
 let name = "John";
@@ -15,9 +15,9 @@ function sayHi() {
 
 name = "Pete";
 
-sayHi(); // what will it show: "John" or "Pete"?
+sayHi(); // "John"과 "Pete" 중 무엇이 출력될까요?
 ```
 
-Such situations are common both in browser and server-side development. A function may be scheduled to execute later than it is created, for instance after a user action or a network request.
+함수가 생성되고, 사용자 작업 또는 네트워크 요청이 끝난 후 함수를 실행해야 하는 상황은 프론트엔드, 백엔드 개발 상관없이 자주 나타납니다.
 
-So, the question is: does it pick up the latest changes?
+그래서, 어떤 name이 출력될까요?
